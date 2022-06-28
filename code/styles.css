@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    --font-size-xsm: 0.6875rem;   /* 11px */
+    --font-size-sm: 0.8125rem;   /* 13px */
+    --font-size-base: 1rem;    /* 16px, base */
+    --font-size-lg: 1.75rem;   /* 28px */
+
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--dark-blue);
+}
+
+.advice-area {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 400px 1fr 1fr;
+    width: min(100% - 1rem, 28rem); /* chooses the smaller of the 2 */
+    margin: 5rem auto;
+    margin-inline: auto;
+    justify-items: center;
+}
+
+.advice {
+    text-align: center;
+    background-color: var(--dark-grayish-blue);
+    height: 100px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 1rem;
+}
+
+.divider {
+    width: 80%;
+
+}
+
+.advice-button {
+    grid-row: 2/4;
+    background-color: var(--neon-green);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+
+}
