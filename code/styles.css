@@ -28,7 +28,6 @@ body {
     width: min(100% - 2rem, 28rem); /* chooses the smaller of the 2 */
     margin: 5rem auto;
     margin-inline: auto;
-    justify-items: center;
 }
 
 .advice {
