@@ -75,10 +75,37 @@ body {
     align-items: center;
 }
 
+.advice-button:active {
+    bottom: -2.2rem; 
+}
+
 .advice-button:hover {
     box-shadow: 0px 0px 16px 3px var(--neon-green);
 }
 
-@media only screen and (max-width: 480px) {
+.advice-button:focus {
+    outline: 2px solid var(--light-cyan);
+    outline-offset: 4px;
+}
 
+.attribution {
+    text-align: center;
+    color: var(--light-cyan);
+    font-size: var(--font-size-sm);
+}
+
+a:link { 
+    position: relative;
+    color: var(--neon-green);
+}
+a:visited {
+    color: hsl(249, 72%, 69%);
+}
+
+a:hover {
+    color: hsl(120, 72%, 69%);
+}
+a:active {
+    top: 1px;
+    color: hsl(207, 72%, 69%);
 }
