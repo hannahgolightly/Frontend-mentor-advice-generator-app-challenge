@@ -1,5 +1,7 @@
 const adviceContainer = document.querySelector('#advice');
 const adviceNumber = document.querySelector('#advice-number');
+const adviceButton = document.querySelector('.advice-button');
+
 
 async function apiCall() {
     let url = 'https://api.adviceslip.com/advice';
@@ -19,3 +21,16 @@ async function getAdvice() {
 }
 
 getAdvice()
+
+adviceButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    getAdvice();
+});
+
+adviceButton.addEventListener('keyup', function (e) {
+    e.preventDefault();
+    if (e.keyCode === 32 || e.keyCode === 13) {
+        getAdvice();
+    }
+});
+
